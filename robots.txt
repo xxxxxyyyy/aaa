@@ -1,0 +1,7 @@
+---
+layout: null
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /blog
+Sitemap:{{ '/sitemap.xml' | relative_url | prepend: site.url }}

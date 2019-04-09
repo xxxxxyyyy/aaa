@@ -1,0 +1,7 @@
+{% if page.head_script %}
+  {% if page.head_script contains '://' %}
+    <script type="text/javascript" src="{{ page.head_script }}" async defer></script>
+    {% else %}
+    <script type="text/javascript" src="{{ page.head_script | prepend: site.baseurl }}" async defer></script>
+  {% endif %}
+{% endif %}
